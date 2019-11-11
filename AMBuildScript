@@ -162,7 +162,7 @@ class KEConfig(object):
 KE = KEConfig()
 KE.configure()
 
-KE.libamtl = builder.RunScript('amtl/AMBuilder', {
+KE.libamtl = builder.RunScript('AMBuilder', {
     'Configure': lambda builder, name: KE.StaticLibrary(builder, name),
 })
 KE.libamtl = KE.libamtl.binary
